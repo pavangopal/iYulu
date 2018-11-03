@@ -12,6 +12,13 @@
 		1DE15777218D7CF200BCDEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE15775218D7CF200BCDEEC /* Main.storyboard */; };
 		1DE15779218D7CF300BCDEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE15778218D7CF300BCDEEC /* Assets.xcassets */; };
 		1DE1577C218D7CF300BCDEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1577A218D7CF300BCDEEC /* LaunchScreen.storyboard */; };
+		1DE15784218D7DB200BCDEEC /* ServerData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE15783218D7DB200BCDEEC /* ServerData.json */; };
+		1DE15786218D7DD200BCDEEC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE15785218D7DD200BCDEEC /* Helper.swift */; };
+		1DE15788218D7E2600BCDEEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE15787218D7E2600BCDEEC /* User.swift */; };
+		1DE1578A218D80E300BCDEEC /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE15789218D80E300BCDEEC /* TableViewDataSource.swift */; };
+		1DE15790218D82D200BCDEEC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1578F218D82D200BCDEEC /* Constants.swift */; };
+		1DE15792218D85FE00BCDEEC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE15791218D85FE00BCDEEC /* ViewModel.swift */; };
+		1DE15794218D884C00BCDEEC /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE15793218D884C00BCDEEC /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		1DE15778218D7CF300BCDEEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE1577B218D7CF300BCDEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DE1577D218D7CF300BCDEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE15783218D7DB200BCDEEC /* ServerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServerData.json; sourceTree = "<group>"; };
+		1DE15785218D7DD200BCDEEC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		1DE15787218D7E2600BCDEEC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1DE15789218D80E300BCDEEC /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		1DE1578F218D82D200BCDEEC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1DE15791218D85FE00BCDEEC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1DE15793218D884C00BCDEEC /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,77 @@
 		1DE15770218D7CF200BCDEEC /* Yulu */ = {
 			isa = PBXGroup;
 			children = (
+				1DE15795218D900B00BCDEEC /* Application */,
+				1DE15796218D901700BCDEEC /* Controller */,
+				1DE15799218D904100BCDEEC /* Model */,
+				1DE1579A218D906B00BCDEEC /* ViewModel */,
+				1DE1579B218D908D00BCDEEC /* DataBinding */,
+				1DE15798218D903500BCDEEC /* Resources */,
+				1DE15797218D902900BCDEEC /* Utils */,
+			);
+			path = Yulu;
+			sourceTree = "<group>";
+		};
+		1DE15795218D900B00BCDEEC /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				1DE15771218D7CF200BCDEEC /* AppDelegate.swift */,
-				1DE15773218D7CF200BCDEEC /* ViewController.swift */,
 				1DE15775218D7CF200BCDEEC /* Main.storyboard */,
 				1DE15778218D7CF300BCDEEC /* Assets.xcassets */,
 				1DE1577A218D7CF300BCDEEC /* LaunchScreen.storyboard */,
 				1DE1577D218D7CF300BCDEEC /* Info.plist */,
 			);
-			path = Yulu;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1DE15796218D901700BCDEEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DE15773218D7CF200BCDEEC /* ViewController.swift */,
+				1DE15789218D80E300BCDEEC /* TableViewDataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1DE15797218D902900BCDEEC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1DE15785218D7DD200BCDEEC /* Helper.swift */,
+				1DE1578F218D82D200BCDEEC /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1DE15798218D903500BCDEEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1DE15783218D7DB200BCDEEC /* ServerData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1DE15799218D904100BCDEEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DE15787218D7E2600BCDEEC /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DE1579A218D906B00BCDEEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1DE15791218D85FE00BCDEEC /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1DE1579B218D908D00BCDEEC /* DataBinding */ = {
+			isa = PBXGroup;
+			children = (
+				1DE15793218D884C00BCDEEC /* Dynamic.swift */,
+			);
+			path = DataBinding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE15784218D7DB200BCDEEC /* ServerData.json in Resources */,
 				1DE1577C218D7CF300BCDEEC /* LaunchScreen.storyboard in Resources */,
 				1DE15779218D7CF300BCDEEC /* Assets.xcassets in Resources */,
 				1DE15777218D7CF200BCDEEC /* Main.storyboard in Resources */,
@@ -135,8 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE1578A218D80E300BCDEEC /* TableViewDataSource.swift in Sources */,
+				1DE15788218D7E2600BCDEEC /* User.swift in Sources */,
 				1DE15774218D7CF200BCDEEC /* ViewController.swift in Sources */,
+				1DE15790218D82D200BCDEEC /* Constants.swift in Sources */,
 				1DE15772218D7CF200BCDEEC /* AppDelegate.swift in Sources */,
+				1DE15794218D884C00BCDEEC /* Dynamic.swift in Sources */,
+				1DE15786218D7DD200BCDEEC /* Helper.swift in Sources */,
+				1DE15792218D85FE00BCDEEC /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Yulu/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Yulu/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Yulu/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Yulu/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
